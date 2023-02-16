@@ -1,3 +1,4 @@
 *.d.ts
 *.js
 bin/
+__tests__/coverage

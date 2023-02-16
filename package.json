@@ -2,9 +2,10 @@
     "name": "translater",
     "version": "0.0.1",
     "description": "",
-    "main": "./index.js",
+    "main": "./bin/index.js",
     "scripts": {
-        "dev": "tsx watch ./index.ts",
+      "dev": "tsx watch ./index.ts",
+      "build":"tsc -b",
       "test": "jest"
     },
     "keywords": [],

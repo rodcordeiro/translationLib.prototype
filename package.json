@@ -1,0 +1,44 @@
+{
+    "name": "translater",
+    "version": "0.0.1",
+    "description": "",
+    "main": "./index.js",
+    "scripts": {
+        "dev": "tsx watch ./index.ts",
+      "test": "jest"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "node-fetch": "^3.2.6"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.4.0",
+        "@types/mocha": "^10.0.1",
+        "@types/node": "^18.0.6",
+        "jest": "^29.4.3",
+        "ts-jest": "^29.0.5",
+        "tsx": "^3.12.3",
+        "typescript": "^4.9.5"
+    },
+    "jest": {
+        "testMatch": [
+            "**/*/?(*.)+(spec|test).[jt]s?(x)"
+        ],
+        "transform": {
+            "^.+\\.(t|j)s$": "ts-jest"
+        },
+        "collectCoverage": true,
+        "collectCoverageFrom": [
+            "<rootDir>/*.{js,jsx,ts,tsx}",
+            "!**/node_modules/**",
+            "!**/vendor/**",
+            "!build/**",
+            "!__tests__/**",
+            "!*.{j,t}s"
+        ],
+        "rootDir": "__tests__",
+        "coverageDirectory": "./coverage"
+    }
+}
